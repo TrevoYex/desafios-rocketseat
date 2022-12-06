@@ -49,6 +49,7 @@ label {
     box-shadow: 0 0 .8rem black;
     transition: 1s;
     cursor: pointer;
+    user-select: none;
 }
 
 label i {
