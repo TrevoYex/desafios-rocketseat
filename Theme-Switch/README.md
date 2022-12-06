@@ -1,3 +1,3 @@
 Theme Switch
 
-link: https://trevoyex.github.io/rocketseat/Theme-Switch/
+link: https://trevoyex.github.io/desafios-rocketseat/Theme-Switch/
