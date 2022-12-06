@@ -1,2 +1,2 @@
-# rockseat
-algunas desafios da Rockseat
+# 🚀 Rocketseat
+algunas desafios da Rocketseat
