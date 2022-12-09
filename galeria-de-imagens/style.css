@@ -89,39 +89,19 @@ label i {
     flex-wrap: wrap;
 }
 
-.card-img {
-    position: relative;
-    width: 20rem;
-    height: 16rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 img {
     /* width: 20rem;
     height: 16rem; */
-    width: 100%;
-    height: 100%;
-    /* cursor: pointer; */
-    padding: 10px;
-}
-
-.view {
-    position: absolute;
-    background: #B4930B;
-    padding: 10px;
-    border-radius: 50%;
+    width: 20rem;
+    height: 16rem;
     cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
 }
 
-.view:hover {
-    opacity: 1;
+img:hover {
     animation: select .3s forwards;
 }
+
 
 @keyframes select {
     from {
@@ -133,15 +113,17 @@ img {
 }
 
 .img-container {
-    width: 70rem;
+    width: 65rem;
     height: 33rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
-    background: rgba(0, 0, 0, 0.315);
+    background: rgba(0, 0, 0, 0.479);
+    border-radius: 5px;
     opacity: 0;
     pointer-events: none;
+    z-index: 3;
 }
 
 .img-container.active {
@@ -150,7 +132,25 @@ img {
 }
 
 #full-screen-img {
-    width: 50%;
+    width: 85%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.close {
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    position: fixed;
+    right: 0;
+    cursor: pointer;
+    transition: .3s all;
+    z-index: 4;
+    position: fixed;
+}
+
+.close:hover {
+    color: #aaa;
 }
 
 /* Footer */
