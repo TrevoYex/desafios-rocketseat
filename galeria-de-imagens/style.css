@@ -121,36 +121,14 @@ img:hover {
     position: fixed;
     background: rgba(0, 0, 0, 0.479);
     border-radius: 5px;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
     z-index: 3;
+    /* display: flex; */
 }
 
-.img-container.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-#full-screen-img {
-    width: 85%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.close {
-    padding: 10px;
-    border-radius: 50%;
-    color: white;
-    position: fixed;
-    right: 0;
-    cursor: pointer;
-    transition: .3s all;
-    z-index: 4;
-    position: fixed;
-}
-
-.close:hover {
-    color: #aaa;
+.img-container {
+    display: none;
 }
 
 /* Footer */
