@@ -4,4 +4,4 @@ import initFullScreen from './modules/full-screen-images.js';
 
 initThemeSwitch();
 initScrollToSection();
-// initFullScreen();
+initFullScreen();

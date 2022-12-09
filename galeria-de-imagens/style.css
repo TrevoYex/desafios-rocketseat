@@ -109,17 +109,13 @@ img {
 
 .view {
     position: absolute;
-    background-color: transparent;
-    /* transition: .3s all; */
     background: #B4930B;
-    /* background: transparent; */
-    /* padding: 105px 135px; */
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .view:hover {
@@ -136,7 +132,7 @@ img {
     }
 }
 
-/* .img-container {
+.img-container {
     width: 70rem;
     height: 33rem;
     top: 50%;
@@ -144,12 +140,18 @@ img {
     transform: translate(-50%, -50%);
     position: fixed;
     background: rgba(0, 0, 0, 0.315);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.img-container.active {
     opacity: 1;
+    pointer-events: auto;
 }
 
 #full-screen-img {
     width: 50%;
-} */
+}
 
 /* Footer */
 
