@@ -1,27 +1,41 @@
 export default function initFullScreen() {
     const imgs = document.querySelectorAll('img');
     const close = document.querySelector('.close');
-    const view = document.querySelectorAll('.view');
     const fullScreenImg = document.querySelector('#full-screen-img');
+
+    const next = document.querySelector('.next');
+    const back = document.querySelector('.back');
     
     let i;
 
     imgs.forEach(img => {
         img.addEventListener('click', () => {
             document.querySelector('.img-container').classList.add('active');
-            // document.body.classList.add('full-screen-img');
             fullScreenImg.src = img.src;
             i = img.getAttribute('data-number');
-        });
-    });
-
-    view.forEach(item => {
-        item.addEventListener('click', () => {
-            document.querySelector('.img-container').classList.add('active');
         });
     });
 
     close.addEventListener('click', () => {
         document.querySelector('.img-container').classList.remove('active');
     });
+
+    function nextImg() {
+        i++
+        if(i > imgs.length - 1) {
+            i = 0
+        }
+        fullScreenImg.src = imgs[i].src
+    }
+
+    function backImg() {
+        i--
+        if(i < 0) {
+            i = imgs.length
+        }
+        fullScreenImg.src = imgs[i].src
+    }
+
+    next.addEventListener('click', nextImg);
+    back.addEventListener('click', backImg);
 }
